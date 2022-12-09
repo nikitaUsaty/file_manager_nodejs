@@ -1,0 +1,21 @@
+{
+  "name": "file_manager_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "cli/index.js",
+  "scripts": {
+    "start": "node cli/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitaUsaty/file_manager_nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikitaUsaty/file_manager_nodejs/issues"
+  },
+  "homepage": "https://github.com/nikitaUsaty/file_manager_nodejs#readme"
+}
