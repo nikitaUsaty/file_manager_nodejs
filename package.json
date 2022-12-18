@@ -17,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/nikitaUsaty/file_manager_nodejs/issues"
   },
-  "homepage": "https://github.com/nikitaUsaty/file_manager_nodejs#readme"
+  "homepage": "https://github.com/nikitaUsaty/file_manager_nodejs#readme",
+  "dependencies": {}
 }
