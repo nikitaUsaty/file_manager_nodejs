@@ -27,7 +27,7 @@ function goUp() {
 }
 
 async function cd(dest) {
-  if (await checkPath(dest)) {
+  if (checkPath(dest)) {
     currentDirectory = path.resolve(currentDirectory, dest)
   }
 }
