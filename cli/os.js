@@ -28,7 +28,8 @@ function getEOL() {
 }
 
 function getCPU() {
-  return console.log(os.cpus())
+  console.log(`\nOverall amount of CPUs: ${os.cpus().length}`)
+  return console.table(os.cpus())
 }
 
 function getHomeDir() {
