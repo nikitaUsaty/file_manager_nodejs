@@ -1,7 +1,7 @@
 import os from 'os'
 import fs from 'fs'
 import path from 'path'
-import { exists } from './utils/getFileDirectory.js'
+import { exists } from './getFileDirectory.js'
 
 export async function navigation(input) {
   switch (input[0]) {
