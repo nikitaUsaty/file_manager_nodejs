@@ -1,10 +1,8 @@
 #!/usr/bin/env node
-import os from 'os'
-import path from 'path'
 import readline from 'readline'
 
 import { parseArgs } from './parseArgs.js'
-import { getFileDir } from './utils/getFileDirectory.js'
+import { getFileDir } from './getFileDirectory.js'
 import { showOSInfo } from './os.js'
 import { calculateHash } from './hash.js'
 import { basicOperations } from './basic.js'
@@ -17,11 +15,10 @@ const initArgs = args.join().split('=')
 const username = initArgs[1]
 const welcomeMsg = `Welcome to the File Manager, ${username}! \n`
 const goodbyeMsg = `Thank you for using File Manager, ${username}, goodbye!`
-const { __dirname, __filename } = getFileDir(import.meta.url)
 
 rl.write(welcomeMsg)
 
-rl.write(__dirname)
+console.log(`\nYou're currently in ${currentDirectory}\n`)
 
 rl.on('line', (input) => {
   const parsedInput = parseArgs(input)
@@ -48,7 +45,10 @@ rl.on('line', (input) => {
     default:
       break
   }
-  console.log(`\nYou're currently in ${currentDirectory}\n`)
+
+  setTimeout(() => {
+    console.log(`\nYou're currently in ${currentDirectory}\n`)
+  }, 0)
 })
 
 rl.on('SIGINT', function () {
